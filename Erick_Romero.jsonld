@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "Erick_Romero",
+    "motivations": "With a passion for decentralization, I want to leverage my experience to help Cardano thrive as a global digital nation by empowering developers and creating new business opportunities.",
+    "objectives": "As a DRep, I aim to foster developer-driven innovation and onboard businesses to Cardano, ensuring decentralized growth and equal opportunities",
+    "paymentAddress": "addr1qx455mwfz89tt9sklq6qj6j78azz0lzz8grmn82dlupssza6965v834ecrd3s9sdts42c8n3rlc7gnqdmxvcjsh8ecgsc4mddp",
+    "qualifications": "15+ years in business development and software development, with 4+ years in blockchain, actively driving innovation and growth within the Cardano ecosystem.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Development firm",
+        "uri": "https://eddalabs.io"
+      },
+      {
+        "@type": "Link",
+        "label": "Link_tree",
+        "uri": "https://linktr.ee/erick__romero"
+      },
+      {
+        "@type": "Identity",
+        "label": "X account",
+        "uri": "https://x.com/ErickRomeroEdda"
+      }
+    ]
+  }
+}
